@@ -106,9 +106,10 @@ void Test_decrypt::largeStringUnderThanMatrix()
 void Test_decrypt::rowMatrix()
 {
 	input=fopen("test.txt","w+");
-	char string[50]="";
+	char string[50]="Example text for testing this  algorithm";
 	fwrite((void*)string,1,40,input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");
@@ -128,7 +129,8 @@ void Test_decrypt::columnMatrix()
 	input=fopen("test.txt","w+");
 	char string[50]="Emax";
 	fwrite((void*)string,1,4,input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");
@@ -148,7 +150,8 @@ void Test_decrypt::matrixSize1()
 	input=fopen("test.txt","w+");
 	char string[50]="E";
 	fwrite((void*)string,1,1,input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");

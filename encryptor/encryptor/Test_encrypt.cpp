@@ -106,7 +106,8 @@ void Test_encrypt::rowMatrix()
 	input=fopen("test.txt","w+");
 	char string[50]="Example text for testing this  algorithm";
 	fwrite((void*)string,1,strlen(string),input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");
@@ -126,7 +127,8 @@ void Test_encrypt::columnMatrix()
 	input=fopen("test.txt","w+");
 	char string[50]="Exam";
 	fwrite((void*)string,1,strlen(string),input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");
@@ -146,7 +148,8 @@ void Test_encrypt::matrixSize1()
 	input=fopen("test.txt","w+");
 	char string[50]="E";
 	fwrite((void*)string,1,strlen(string),input);
-	fclose(input);	
+	fclose(input);
+	
 
 	input=fopen("test.txt","w+");
 	output=fopen("result.txt","w+");
